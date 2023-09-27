@@ -626,6 +626,7 @@ iframe {
   .gh-burger {
     display: block;
   }
+
   #gh-head .gh-head-actions,
   #gh-head .gh-head-menu {
     justify-content: center;
@@ -2419,4 +2420,30 @@ blockquote.kg-blockquote-alt {
 
 .navbar.show + .overlay {
     display: block; /* 当菜单打开时显示半透明背景层 */
+}
+
+@media (max-width: 575px) {
+  #gh-head .gh-head-logo img {
+      max-height: 40px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  #gh-head .gh-head-logo img {
+      max-height: 50px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #gh-head .gh-head-logo img {
+      max-height: 60px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #gh-head .gh-head-logo img {
+      max-height: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  #gh-head .gh-head-logo img {
+      max-height: 80px;
+  }
 }
