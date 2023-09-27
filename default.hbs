@@ -13,7 +13,16 @@
 <body class="{{body_class}} is-head-{{#match @custom.navigation_layout "Logo on the left"}}left-logo{{else match @custom.navigation_layout "Logo in the middle"}}middle-logo{{else}}stacked{{/match}}{{#match @custom.title_font "=" "Elegant serif"}} has-serif-title{{/match}}{{#match @custom.body_font "=" "Elegant serif"}} has-serif-body{{/match}}">
 <!-- 選單欄 -->
 <div class="navbar">
-    <img src="{{@site.logo}}" alt="{{@site.title}}">
+    <a href="{{@site.url}}">
+        {{#if @site.logo}}
+            <img src="{{@site.logo}}" alt="{{@site.title}}">
+            {{#if @custom.white_logo_for_dark_mode}}
+                <img src="{{img_url @custom.white_logo_for_dark_mode}}" alt="{{@site.title}}">
+            {{/if}}
+        {{else}}
+            {{@site.title}}
+        {{/if}}
+    </a>
     {{navigation}}
 </div>
 <!-- 添加一个半透明黑色背景层 -->
