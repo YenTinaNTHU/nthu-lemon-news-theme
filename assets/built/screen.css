@@ -672,11 +672,10 @@ iframe {
   .is-head-open #gh-head {
     -webkit-overflow-scrolling: touch;
     height: 100%;
-    width: 65%;
     inset: 0;
     overflow-y: scroll;
     position: fixed;
-    z-index: 3999999;
+    z-index: 100;
   }
   .is-head-open:not(.is-head-brand):not(.is-head-dark):not(.is-head-transparent)
     #gh-head {
@@ -2390,3 +2389,34 @@ blockquote.kg-blockquote-alt {
   color: var(--dark-mode-primary-text-color);
 }
 /*# sourceMappingURL=screen.css.map */
+
+.navbar {
+  background-color: #ffffff;
+  color: #fff;
+  position: fixed;
+  width: 65%; /* 選單欄寬度 */
+  height: 100%;
+  left: -65%; /* 初始情况下，選單欄隐藏在左侧 */
+  transition: left 0.3s ease;
+  z-index: 202; /* 放在菜单之前 */
+}
+
+.navbar.show {
+  left: 0; /* 点击漢堡图标后，将選單欄滑动到左侧 */
+}
+
+/* 半透明黑色背景 */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /* 半透明黑色背景 */
+  display: none; /* 初始情况下不可见 */
+  z-index: 201; /* 放在菜单之前 */
+}
+
+.navbar.show + .overlay {
+    display: block; /* 当菜单打开时显示半透明背景层 */
+}
