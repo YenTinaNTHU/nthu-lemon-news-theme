@@ -2400,10 +2400,20 @@ blockquote.kg-blockquote-alt {
   left: -65%; /* 初始情况下，選單欄隐藏在左侧 */
   transition: left 0.3s ease;
   z-index: 202; /* 放在菜单之前 */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
+
 
 .navbar.show {
   left: 0; /* 点击漢堡图标后，将選單欄滑动到左侧 */
+}
+.navbar img {
+  margin: 0 auto;
+  max-width: 30%;
 }
 
 /* 半透明黑色背景 */
@@ -2420,6 +2430,11 @@ blockquote.kg-blockquote-alt {
 
 .navbar.show + .overlay {
     display: block; /* 当菜单打开时显示半透明背景层 */
+}
+
+.navindex {
+  margin: 0 0;
+  width: 100%;
 }
 
 /* navbar的logo圖案大小會隨著螢幕寬度改變而改變 */
