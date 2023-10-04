@@ -2422,6 +2422,7 @@ blockquote.kg-blockquote-alt {
     display: block; /* 当菜单打开时显示半透明背景层 */
 }
 
+/* navbar的logo圖案大小會隨著螢幕寬度改變而改變 */
 @media (max-width: 575px) {
   #gh-head .gh-head-logo img {
       max-height: 40px;
