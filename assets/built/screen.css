@@ -2463,3 +2463,24 @@ blockquote.kg-blockquote-alt {
       max-height: 80px;
   }
 }
+
+/* 首頁標題下方的水平直線們 */
+.topic-title {
+  position: relative;
+  border-bottom: 0.5px solid #616161; /* Change the color and thickness as needed */
+  margin-bottom: 10px;  /* Adjust the margin to your preference */
+  padding-top: 40px;
+  padding-bottom: 10px;
+  width: 100%;
+  letter-spacing: 0.3em;
+}
+
+.topic-title::after {
+  content: '';
+  position: absolute;
+  bottom: -4px; /* Adjust this value to control the overlap */
+  left: 0;
+  width: 20%;
+  border-bottom: 9px solid #E1D4BC; /* Change the color and thickness as needed */
+  border-radius: 4.5px;
+}
