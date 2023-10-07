@@ -1,11 +1,13 @@
+<div class="gh-outer">
 {{#get "tags" filter="slug:campus"}}
-    <h1 class="m-subject-title" >{{tags.[0].name}}</h1>
+    <h2 class="topic-title" >{{tags.[0].name}}</h2>
     {{#if tags.[0].description}}
         <p class="m-hero-description">
         {{tags.[0].description}}
         </p>
     {{/if}}
 {{/get}}
+</div>
 {{#get "posts" filter="tag:campus" limit="10" include="tags"}}
 <div class="gh-outer"><div class="featured-posts carousel owl gh-inner">
     
