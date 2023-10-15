@@ -53,6 +53,7 @@ body {
   line-height: 1.5;
   min-height: 100vh;
   text-rendering: optimizespeed;
+  letter-spacing: 0.1em;
 }
 a:not([class]) {
   -webkit-text-decoration-skip: ink;
@@ -1894,7 +1895,7 @@ blockquote.kg-blockquote-alt {
 .post-title {
   font-size: 30px;
   font-weight: 800;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.1em;
   word-break: break-word;
 }
 .has-serif-title :where(.post-feed, .single-post) .post-title {
@@ -1904,7 +1905,7 @@ blockquote.kg-blockquote-alt {
   color: var(--secondary-text-color);
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 .post-meta-item:not(:first-of-type):before {
@@ -2260,11 +2261,13 @@ blockquote.kg-blockquote-alt {
   position: absolute;
   top: 0;
   width: 100%;
+  border-radius: 5%;
 }
 .u-placeholder {
   background-color: var(--light-gray-color);
   position: relative;
   z-index: 10;
+  border-radius: 5%;
 }
 .u-placeholder:before {
   content: "";
@@ -2274,7 +2277,7 @@ blockquote.kg-blockquote-alt {
   padding-bottom: 50%;
 }
 .u-placeholder.rectangle:before {
-  padding-bottom: 62.5%;
+  padding-bottom: 69%;
 }
 .u-placeholder.square:before {
   padding-bottom: 100%;
@@ -2495,4 +2498,8 @@ blockquote.kg-blockquote-alt {
   font-size: 14px;
   color: #616161;
   margin: 20px 0px 20px 0px;
+}
+
+.card-post-content > :not(p) {
+  display: none;
 }
