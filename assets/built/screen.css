@@ -2484,3 +2484,15 @@ blockquote.kg-blockquote-alt {
   border-bottom: 9px solid #E1D4BC; /* Change the color and thickness as needed */
   border-radius: 4.5px;
 }
+
+/* 首頁貼文卡片內文 */
+.card-post-content {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  color: #616161;
+  margin: 20px 0px 20px 0px;
+}
