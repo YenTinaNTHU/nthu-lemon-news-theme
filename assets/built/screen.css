@@ -13,7 +13,7 @@
   --font-serif: serif, Georgia;
   --head-nav-gap: 2.8rem;
   --h1-size: 4.6rem;
-  --gap: 3.6rem;
+  --gap: 1.2rem;
   --header-spacing: 80px;
 }
 @media (max-width: 767px) {
@@ -1834,6 +1834,7 @@ blockquote.kg-blockquote-alt {
 }
 .term {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   margin: 0 auto 64px;
   max-width: calc(960px + var(--gap) * 2);
@@ -1870,7 +1871,7 @@ blockquote.kg-blockquote-alt {
 .post-feed .post-media {
   margin: 0 auto 40px;
   max-width: calc(960px + var(--gap) * 2);
-  width: 100%;
+  height:100%;
 }
 .post-media-tag {
   background: var(--primary-color);
@@ -1889,13 +1890,13 @@ blockquote.kg-blockquote-alt {
 }
 .post-header {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   gap: 10px;
 }
 .post-title {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 800;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
   word-break: break-word;
 }
 .has-serif-title :where(.post-feed, .single-post) .post-title {
@@ -1903,10 +1904,9 @@ blockquote.kg-blockquote-alt {
 }
 .post-meta {
   color: var(--secondary-text-color);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
 }
 .post-meta-item:not(:first-of-type):before {
   content: "/";
@@ -2502,4 +2502,17 @@ blockquote.kg-blockquote-alt {
 
 .card-post-content > :not(p) {
   display: none;
+}
+
+.temp {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr; /* 两列，每列的宽度相等 */
+  max-width: 1000px;
+  margin: 0 auto 40px;
+  margin-inline: max(30px, auto);
+}
+@media (max-width: 768px) {
+  .temp {
+    grid-template-columns: 1fr; /* 变为1列 */ 
+  }
 }
