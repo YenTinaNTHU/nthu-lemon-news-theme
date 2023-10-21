@@ -1,4 +1,4 @@
-<article class="{{post_class}}{{#unless feature_image}} no-image{{/unless}} temp">
+<article class="{{post_class}}{{#unless feature_image}} no-image{{/unless}} topic-post-card">
 
     {{#if feature_image}}
     <figure class="post-media gh-canvas">
@@ -21,7 +21,7 @@
     </figure>
     {{/if}}
 
-    <div class="gh-canvas">
+    <div class="post-container">
         <header class="post-header">
 
             <h2 class="post-title">
@@ -32,7 +32,7 @@
                 <span class="post-meta-item post-meta-date">
                     <time datetime="{{date format="YYYY-MM-DD"}}">{{date published_at}}</time>
                 </span>
-                {{#if reading_time}}
+                {{!-- {{#if reading_time}}
                     <span class="post-meta-item post-meta-length">{{reading_time}}</span>
                 {{/if}}
                 {{#if @site.comments_enabled}}
@@ -40,13 +40,13 @@
                 {{/if}}
                 {{#primary_tag}}
                     <span class="post-meta-item post-meta-tags"><a class="post-tag post-tag-{{slug}}" href="{{url}}" title="{{name}}">{{name}}</a></span>
-                {{/primary_tag}}
+                {{/primary_tag}} --}}
             </div>
             
         </header>
 
         {{#if excerpt}}
-            <div class="card-post-content">
+            <div class="card-post-content tag">
                 {{excerpt words="33"}}
             </div>
         {{/if}}
