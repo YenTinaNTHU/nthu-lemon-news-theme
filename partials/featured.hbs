@@ -1,11 +1,11 @@
 {{#get "posts" filter="featured:true" limit="10" include="tags" as |featured|}}{{#if featured}}
-<div class="gh-outer"><div class="featured-posts carousel owl gh-inner">
+<div class="gh-outer"><div class="featured-posts carousel banner owl gh-inner">
 
     {{#foreach featured}}
     <article class="{{post_class}}{{#unless feature_image}} no-image{{/unless}}">
 
         <figure class="post-media">
-        <div class="u-placeholder square">
+        <div class="u-placeholder rectangle">
             <a class="post-image-link" href="{{url}}">
                 {{#primary_tag}}
                     <span class="post-media-tag post-tag-{{slug}}">{{name}}</span>
