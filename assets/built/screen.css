@@ -1199,16 +1199,15 @@ blockquote.kg-blockquote-alt {
   opacity: 0.8;
 }
 .gh-foot {
-  color: var(--color-secondary-text);
+  color: #FFFFFFDE;
   padding-bottom: 8rem;
   padding-top: 8rem;
   white-space: nowrap;
+  background-color: #E1D4BC;
 }
 .gh-foot-inner {
-  display: grid;
-  font-size: 1.3rem;
-  gap: 40px;
-  grid-template-columns: 1fr auto 1fr;
+  font-size: 30px;
+  text-align: center;
 }
 .no-menu .gh-foot-inner {
   align-items: center;
