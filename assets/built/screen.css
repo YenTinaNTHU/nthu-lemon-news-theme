@@ -207,6 +207,8 @@ iframe {
 .gh-outer {
   padding-left: var(--gap);
   padding-right: var(--gap);
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .gh-inner {
   margin: 0 auto;
@@ -256,6 +258,8 @@ iframe {
   grid-auto-flow: row dense;
   grid-template-columns: 1fr 1fr auto;
   height: 100%;
+  margin-top: 18px;
+  margin-bottom: 18px;
 }
 .gh-head-brand {
   line-height: 1;
@@ -287,6 +291,9 @@ iframe {
 .gh-head-menu {
   align-items: center;
   gap: var(--head-nav-gap);
+}
+.gh-head-menu .nav > li > a {
+  font-size: 18px;
 }
 .gh-head .nav {
   display: inline-flex;
@@ -1206,7 +1213,7 @@ blockquote.kg-blockquote-alt {
   background-color: #E1D4BC;
 }
 .gh-foot-inner {
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
 }
 .no-menu .gh-foot-inner {
@@ -2407,7 +2414,7 @@ blockquote.kg-blockquote-alt {
   background-color: #ffffff;
   color: #fff;
   position: fixed;
-  width: 65%; /* 選單欄寬度 */
+  width: 220px; /* 選單欄寬度 */
   height: 100%;
   left: -65%; /* 初始情况下，選單欄隐藏在左侧 */
   transition: left 0.3s ease;
@@ -2424,7 +2431,7 @@ blockquote.kg-blockquote-alt {
   left: 0; /* 点击漢堡图标后，将選單欄滑动到左侧 */
 }
 .navbar img {
-  margin: 0 auto;
+  margin: 50px;
   max-width: 30%;
 }
 
@@ -2447,6 +2454,11 @@ blockquote.kg-blockquote-alt {
 .navindex {
   margin: 0 0;
   width: 100%;
+}
+
+/* 直式選單內的各主題間距 */
+.navindex .nav > li {
+  margin-top: 30px;
 }
 
 /* navbar的logo圖案大小會隨著螢幕寬度改變而改變 */
@@ -2495,14 +2507,6 @@ blockquote.kg-blockquote-alt {
   width: 20%;
   border-bottom: 9px solid #E1D4BC; /* Change the color and thickness as needed */
   border-radius: 4.5px;
-}
-
-@media (min-width: 1240px) {
-  .topic-title {
-    width:80%;
-    margin: auto;
-    position: relative;
-  }
 }
 
 /* 首頁貼文卡片內文 */
