@@ -249,6 +249,7 @@ iframe {
 .gh-head {
   background-color: var(--color-white);
   height: 100px;
+  z-index: 2;
 }
 .gh-head-inner {
   align-items: center;
