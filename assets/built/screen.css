@@ -2277,13 +2277,13 @@ blockquote.kg-blockquote-alt {
   position: absolute;
   top: 0;
   width: 100%;
-  border-radius: 5%;
+  border-radius: 20px;
 }
 .u-placeholder {
   background-color: var(--light-gray-color);
   position: relative;
   z-index: 10;
-  border-radius: 5%;
+  border-radius: 20px;
 }
 .u-placeholder:before {
   content: "";
@@ -2538,7 +2538,7 @@ blockquote.kg-blockquote-alt {
   margin: 0 auto 40px;
   margin-inline: max(30px, auto);
 }
-@media (max-width: 535px) {
+@media (max-width: 768px) {
   .topic-post-card {
     grid-template-columns: 1fr; /* 变为1列 */ 
   }
