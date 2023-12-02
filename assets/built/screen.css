@@ -358,7 +358,7 @@ iframe {
     display: none;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 767.1px) {
   .gh-head-brand .gh-search {
     display: none;
   }
@@ -1176,7 +1176,7 @@ blockquote.kg-blockquote-alt {
   align-items: center;
   background-color: transparent;
   border: 0;
-  color: var(--darker-gray-color);
+  color: var(--mid-gray-color);
   cursor: pointer;
   display: inline-flex;
   height: 30px;
@@ -1208,8 +1208,8 @@ blockquote.kg-blockquote-alt {
 }
 .gh-foot {
   color: #FFFFFFDE;
-  padding-bottom: 8rem;
-  padding-top: 8rem;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
   white-space: nowrap;
   background-color: #E1D4BC;
 }
@@ -1255,8 +1255,8 @@ blockquote.kg-blockquote-alt {
 }
 @media (max-width: 767px) {
   .gh-foot {
-    padding-bottom: 12rem;
-    padding-top: 6.4rem;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
   }
   .gh-foot-inner {
     grid-template-columns: 1fr;
@@ -1762,7 +1762,7 @@ blockquote.kg-blockquote-alt {
   --red-color: #ff7473;
   --white-color: #fff;
   --light-gray-color: #f1f1f1;
-  --mid-gray-color: #d9d9d9;
+  --mid-gray-color: #cfcfcf;
   --dark-gray-color: #1a1a1a;
   --black-color: #000;
   --dark-mode-bg-color: #282c35;
@@ -1869,6 +1869,14 @@ blockquote.kg-blockquote-alt {
   width: 100%;
   letter-spacing: 0.3em;
 }
+@media (max-width: 767px) {
+  .term-name {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #616161;
+  }
+}
+
 .term-description {
   line-height: 1.5;
   margin-top: 16px;
@@ -2085,6 +2093,7 @@ blockquote.kg-blockquote-alt {
 }
 .related-posts {
   margin-top: 80px;
+  margin-bottom: 80px;
 }
 .related-title {
   font-size: 13px;

@@ -33,48 +33,51 @@
 
 <div class="site">
     <header id="gh-head" class="gh-head gh-outer">
-        <div>
-            <div class="gh-head-inner">
-                <div class="gh-head-brand">
-                    <button class="gh-burger" onclick="toggleNavbar()"></button>
-                    
-                    <div class="gh-head-brand-wrapper">
-                        <a class="gh-head-logo" href="{{@site.url}}">
-                            {{#if @site.logo}}
-                                <img src="{{@site.logo}}" alt="{{@site.title}}">
-                                {{#if @custom.white_logo_for_dark_mode}}
-                                    <img src="{{img_url @custom.white_logo_for_dark_mode}}" alt="{{@site.title}}">
-                                {{/if}}
-                            {{else}}
-                                {{@site.title}}
+
+        <div class="gh-head-inner">
+            <div class="gh-head-brand">
+                <button class="gh-burger" onclick="toggleNavbar()"></button>
+                
+                <div class="gh-head-brand-wrapper">
+                    <a class="gh-head-logo" href="{{@site.url}}">
+                        {{#if @site.logo}}
+                            <img src="{{@site.logo}}" alt="{{@site.title}}">
+                            {{#if @custom.white_logo_for_dark_mode}}
+                                <img src="{{img_url @custom.white_logo_for_dark_mode}}" alt="{{@site.title}}">
                             {{/if}}
-                        </a>
-                    </div>
-                    
+                        {{else}}
+                            {{@site.title}}
+                        {{/if}}
+                    </a>
+                </div>
+                
+                <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search>{{> "icons/search"}}</button>
+                
+            </div>
+
+            <nav class="gh-head-menu">
+                {{navigation}}
+                {{#unless @site.members_enabled}}
+                    {{#match @custom.navigation_layout "Stacked"}}
+                        <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search>{{> "icons/search"}}</button>
+                    {{/match}}
+                {{/unless}}
+            </nav> 
+
+            <div class="gh-head-actions">
+                {{#unless @site.members_enabled}}
+                    {{^match @custom.navigation_layout "Stacked"}}
+                        <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search>{{> "icons/search"}}</button>
+                    {{/match}}
+                {{else}}
                     <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search>{{> "icons/search"}}</button>
                     
-                </div>
-
-                <div class="gh-head-actions">
-                    {{#unless @site.members_enabled}}
-                        {{^match @custom.navigation_layout "Stacked"}}
-                            <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search>{{> "icons/search"}}</button>
-                        {{/match}}
-                    {{else}}
-                        <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search>{{> "icons/search"}}</button>
-                        
-                    {{/unless}}
-                </div>
+                {{/unless}}
             </div>
-            <nav class="gh-head-menu">
-                    {{navigation}}
-                    {{#unless @site.members_enabled}}
-                        {{#match @custom.navigation_layout "Stacked"}}
-                            <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search>{{> "icons/search"}}</button>
-                        {{/match}}
-                    {{/unless}}
-            </nav>   
+
         </div>
+  
+
 
 
     </header>
