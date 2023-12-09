@@ -205,10 +205,15 @@ iframe {
   padding-block: 0;
 }
 .gh-outer {
-  padding-left: var(--gap);
-  padding-right: var(--gap);
   margin-left: 10%;
   margin-right: 10%;
+}
+/* 手機板的邊框變窄 */
+@media (max-width: 576px) {
+  .gh-outer {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
 .gh-inner {
   margin: 0 auto;
@@ -2004,6 +2009,12 @@ blockquote.kg-blockquote-alt {
   font-size: 3.6rem;
   margin-bottom: 0;
 }
+/* 手機版的文章內頁標題變小 */
+@media (max-width: 576px) {
+  .single-post .post-title {
+    font-size: 3rem;
+  }
+}
 .single-post .post-meta {
   margin-bottom: 16px;
 }
@@ -2313,7 +2324,7 @@ blockquote.kg-blockquote-alt {
     padding-bottom: 62.5%;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 576px) {
   .hidden-xs {
     display: none !important;
   }
@@ -2472,7 +2483,7 @@ blockquote.kg-blockquote-alt {
 }
 
 /* navbar的logo圖案大小會隨著螢幕寬度改變而改變 */
-@media (max-width: 575px) {
+@media (max-width: 576px) {
   #gh-head .gh-head-logo img {
       max-height: 40px;
   }
