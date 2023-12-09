@@ -1946,11 +1946,13 @@ blockquote.kg-blockquote-alt {
   padding: 15px;
   border-radius: 10px;
   font-size: 2.4rem;
+  width: 80%;
 }
 @media (max-width: 767px) {
   .post-title-link-featured {
     font-size: 1.2rem;
   }
+  
 }
 .has-serif-title :where(.post-feed, .single-post) .post-title {
   font-family: var(--font-serif);
@@ -2234,6 +2236,7 @@ blockquote.kg-blockquote-alt {
 .owl .owl-prev.disabled {
   color: var(--secondary-text-color);
   cursor: default;
+  display: none;
 }
 .owl .owl-prev {
   left: -20px;
