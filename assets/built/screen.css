@@ -1945,6 +1945,7 @@ blockquote.kg-blockquote-alt {
   word-break: break-word;
   padding: 15px;
   border-radius: 10px;
+  width: 80%;
 }
 .has-serif-title :where(.post-feed, .single-post) .post-title {
   font-family: var(--font-serif);
@@ -2226,6 +2227,7 @@ blockquote.kg-blockquote-alt {
 .owl .owl-prev.disabled {
   color: var(--secondary-text-color);
   cursor: default;
+  display: none;
 }
 .owl .owl-prev {
   left: -20px;
