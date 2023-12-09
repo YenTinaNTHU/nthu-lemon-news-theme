@@ -230,7 +230,7 @@ iframe {
     0,
     calc((var(--container-width, 1200px) - var(--content-width, 500px)) / 2)
   );
-  --full: minmax(var(--gap), 1fr);
+  --full: minmax(0, 1fr);
   display: grid;
   grid-template-columns: [full-start] var(--full) [wide-start] var(--wide) [main-start] var(
       --main
@@ -1853,7 +1853,7 @@ blockquote.kg-blockquote-alt {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  margin: 0 auto 64px;
+  margin: 0 auto 30px;
   max-width: calc(960px + var(--gap) * 2);
 }
 .term-image-container {
@@ -1865,7 +1865,7 @@ blockquote.kg-blockquote-alt {
   width: 64px;
 }
 .term-name {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 800;
   margin-bottom: 0;
   text-align: center;
@@ -1874,16 +1874,19 @@ blockquote.kg-blockquote-alt {
   position: relative;
   border-bottom: 1.5px solid #616161; /* Change the color and thickness as needed */
   margin-bottom: 10px;  /* Adjust the margin to your preference */
-  padding-top: 40px;
-  padding-bottom: 30px;
+  padding-top: 5px;
+  padding-bottom: 25px;
   width: 100%;
   letter-spacing: 0.3em;
 }
 @media (max-width: 767px) {
   .term-name {
-    font-size: 3rem;
+    font-size: 1.8rem;
     font-weight: bold;
     color: #616161;
+  }
+  .term {
+    margin: 0 auto 0;
   }
 }
 
@@ -1904,9 +1907,13 @@ blockquote.kg-blockquote-alt {
   margin-bottom: 20px;
 }
 .post-feed .post-media {
-  margin: 0 auto 40px;
+  margin: 0 auto 20px;
   max-width: calc(960px + var(--gap) * 2);
-  height:100%;
+}
+@media (min-width: 767px) {
+  .post-feed .post-media {
+    height: 200px;
+  }
 }
 .post-media-tag {
   background: var(--primary-color);
@@ -1929,8 +1936,10 @@ blockquote.kg-blockquote-alt {
   gap: 10px;
 }
 .post-title {
+  font-size: 1.8rem;
   font-weight: 800;
-  letter-spacing: 0.15em;
+  line-height: 1.4;
+  letter-spacing: 0.4em;
   word-break: break-word;
 }
 /* featured post banner 圖片上的置中標題 */
@@ -1984,7 +1993,7 @@ blockquote.kg-blockquote-alt {
     margin-bottom: 30px;
   }
   .post-feed .post-title {
-    font-size: 24px;
+    font-size: 1.7rem;
   }
 }
 .pagination {
@@ -2325,13 +2334,13 @@ blockquote.kg-blockquote-alt {
   position: absolute;
   top: 0;
   width: 100%;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .u-placeholder {
   background-color: var(--light-gray-color);
   position: relative;
   z-index: 10;
-  border-radius: 20px;
+  border-radius: 10px;
   text-align: center;
 }
 .u-placeholder:before {
@@ -2503,6 +2512,7 @@ blockquote.kg-blockquote-alt {
 .navindex {
   margin: 0 0;
   width: 100%;
+  font-weight: 600;
 }
 
 /* 直式選單內的各主題間距 */
@@ -2566,8 +2576,9 @@ blockquote.kg-blockquote-alt {
   text-overflow: ellipsis;
   font-size: 11px;
   font-weight: 600;
+  letter-spacing: 0.4rem;
   color: #616161;
-  margin: 20px 0px;
+  margin: 40px 0px 20px;
   line-height: 1.6; /* 根据 font-size 调整 */
 }
 
@@ -2584,8 +2595,8 @@ blockquote.kg-blockquote-alt {
 
 .topic-post-card {
   display: grid;
-  grid-template-columns: 1.5fr 2fr; /* 两列，每列的宽度相等 */
-  /* max-width: 1000px; */
+  grid-template-columns: 1fr 2fr; /* 两列，每列的宽度相等 */
+  max-width: 1000px;
   margin: 0 auto 40px;
   margin-inline: max(30px, auto);
 }
@@ -2596,5 +2607,10 @@ blockquote.kg-blockquote-alt {
 }
 
 .post-container{
-  padding: 10px 30px 40px;
+  padding: 0px 25px 40px;
+}
+@media (max-width: 768px) {
+  .post-container {
+    padding: 10px 0px 40px;
+  }
 }
