@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;400;500;600;700;800&display=swap');
+
 :root {
   --color-primary-text: #333;
   --color-secondary-text: #999;
@@ -10,7 +12,7 @@
   --color-black: #000;
   --font-sans: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
     sans-serif;
-  --font-serif: serif, Georgia;
+  --font-serif: 'Noto Serif TC', serif, Georgia;
   --head-nav-gap: 2.8rem;
   --h1-size: 4.6rem;
   --gap: 1.2rem;
@@ -119,7 +121,7 @@ h1 {
   font-size: var(--h1-size);
 }
 h2 {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
 }
 h3 {
   font-size: 2.4rem;
@@ -299,7 +301,7 @@ iframe {
   gap: var(--head-nav-gap);
 }
 .gh-head-menu .nav > li > a {
-  font-size: 18px;
+  font-size: 14px;
 }
 .gh-head .nav {
   display: inline-flex;
@@ -1779,7 +1781,7 @@ blockquote.kg-blockquote-alt {
   --shadow-base: 0 0 5px rgba(0, 0, 0, 0.2);
   --font-sans: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
     Arial, sans-serif;
-  --font-serif: Lora, Times, serif;
+  --font-serif: 'Noto Serif TC', Lora, Times, serif;
   --font-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
     monospace;
   --content-font-size: 1.7rem;
@@ -1790,7 +1792,7 @@ blockquote.kg-blockquote-alt {
 }
 .gh-head-actions,
 .gh-head-menu {
-  font-weight: 600;
+  font-weight: 800;
 }
 .toggle-track {
   background-color: var(--dark-gray-color);
@@ -2079,7 +2081,7 @@ blockquote.kg-blockquote-alt {
 }
 .featured-posts {
   margin-bottom: 48px;
-  margin-top: 64px;
+  margin-top: 30px;
   min-height: 400px;
 }
 .featured-posts .post {
@@ -2525,7 +2527,7 @@ blockquote.kg-blockquote-alt {
   position: absolute;
   bottom: -4px; /* Adjust this value to control the overlap */
   left: 0;
-  width: 20%;
+  width: 30%;
   border-bottom: 9px solid #E1D4BC; /* Change the color and thickness as needed */
   border-radius: 4.5px;
 }
