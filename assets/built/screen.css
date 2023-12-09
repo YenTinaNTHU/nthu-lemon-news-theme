@@ -1931,6 +1931,21 @@ blockquote.kg-blockquote-alt {
   letter-spacing: 0.15em;
   word-break: break-word;
 }
+/* featured post banner 圖片上的置中標題 */
+.post-title-link-featured {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 25px;
+  font-weight: 800;
+  background-color: rgba(0, 0, 0, 0.3);;
+  letter-spacing: 0.15em;
+  word-break: break-word;
+  padding: 15px;
+  border-radius: 10px;
+}
 .has-serif-title :where(.post-feed, .single-post) .post-title {
   font-family: var(--font-serif);
 }
@@ -2307,6 +2322,7 @@ blockquote.kg-blockquote-alt {
   position: relative;
   z-index: 10;
   border-radius: 20px;
+  text-align: center;
 }
 .u-placeholder:before {
   content: "";
