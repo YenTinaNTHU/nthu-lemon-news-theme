@@ -35,9 +35,11 @@
             </div>
         </header>
 
-        <div class="card-post-content">
-            <p>{{content}}</p>
-        </div>
+        {{#if excerpt}}
+            <p class="card-post-content">{{excerpt}}</p>
+            {{else}}
+		        <p class="card-post-content">{{content}}</p>
+        {{/if}}
 
     </article>
     {{/foreach}}

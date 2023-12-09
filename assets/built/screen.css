@@ -1270,6 +1270,7 @@ blockquote.kg-blockquote-alt {
   .gh-foot-inner {
     grid-template-columns: 1fr;
     text-align: center;
+    font-size: 10px;
   }
   .gh-foot-menu .nav {
     flex-direction: column;
@@ -2103,9 +2104,7 @@ blockquote.kg-blockquote-alt {
   text-transform: uppercase;
 }
 .featured-posts {
-  margin-bottom: 48px;
   margin-top: 30px;
-  min-height: 400px;
 }
 .featured-posts .post {
   display: none;
@@ -2118,8 +2117,8 @@ blockquote.kg-blockquote-alt {
   flex-direction: column;
 }
 .featured-posts .post-title {
-  letter-spacing: 0.5rem;
-  font-size: 1.6rem;
+  letter-spacing: 0.4rem;
+  font-size: 1.7rem;
   font-weight: bold;
   line-height: 1.2;
 }
@@ -2543,7 +2542,7 @@ blockquote.kg-blockquote-alt {
   position: relative;
   border-bottom: 0.5px solid #616161; /* Change the color and thickness as needed */
   margin-bottom: 10px;  /* Adjust the margin to your preference */
-  padding-top: 40px;
+  padding-top: 60px;
   padding-bottom: 10px;
   width: 100%;
   letter-spacing: 0.3em;
