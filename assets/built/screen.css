@@ -225,10 +225,10 @@ iframe {
 }
 .gh-canvas,
 .kg-width-full.kg-content-wide {
-  --main: min(var(--content-width, 720px), 100% - var(--gap) * 2);
+  --main: min(var(--content-width, 500px), 100% - var(--gap) * 2);
   --wide: minmax(
     0,
-    calc((var(--container-width, 1200px) - var(--content-width, 720px)) / 2)
+    calc((var(--container-width, 1200px) - var(--content-width, 500px)) / 2)
   );
   --full: minmax(var(--gap), 1fr);
   display: grid;
@@ -2585,7 +2585,7 @@ blockquote.kg-blockquote-alt {
 .topic-post-card {
   display: grid;
   grid-template-columns: 1.5fr 2fr; /* 两列，每列的宽度相等 */
-  max-width: 1000px;
+  /* max-width: 1000px; */
   margin: 0 auto 40px;
   margin-inline: max(30px, auto);
 }
