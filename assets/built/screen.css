@@ -230,7 +230,7 @@ iframe {
     0,
     calc((var(--container-width, 1200px) - var(--content-width, 720px)) / 2)
   );
-  --full: minmax(var(--gap), 1fr);
+  --full: minmax(0, 1fr);
   display: grid;
   grid-template-columns: [full-start] var(--full) [wide-start] var(--wide) [main-start] var(
       --main
@@ -1874,16 +1874,19 @@ blockquote.kg-blockquote-alt {
   position: relative;
   border-bottom: 1.5px solid #616161; /* Change the color and thickness as needed */
   margin-bottom: 10px;  /* Adjust the margin to your preference */
-  padding-top: 40px;
-  padding-bottom: 30px;
+  padding-top: 5px;
+  padding-bottom: 25px;
   width: 100%;
   letter-spacing: 0.3em;
 }
 @media (max-width: 767px) {
   .term-name {
-    font-size: 3rem;
+    font-size: 1.8rem;
     font-weight: bold;
     color: #616161;
+  }
+  .term {
+    margin: 0 auto 0;
   }
 }
 
@@ -1930,6 +1933,7 @@ blockquote.kg-blockquote-alt {
 }
 .post-title {
   font-weight: 800;
+  line-height: 1.4;
   letter-spacing: 0.15em;
   word-break: break-word;
 }
@@ -1984,7 +1988,7 @@ blockquote.kg-blockquote-alt {
     margin-bottom: 30px;
   }
   .post-feed .post-title {
-    font-size: 24px;
+    font-size: 1.7rem;
   }
 }
 .pagination {
@@ -2596,5 +2600,5 @@ blockquote.kg-blockquote-alt {
 }
 
 .post-container{
-  padding: 10px 30px 40px;
+  padding: 20px 0px 40px;
 }
