@@ -817,7 +817,7 @@ iframe {
   }
 }
 .gh-content {
-  font-size: var(--content-font-size, 1.8rem);
+  font-size: var(--content-font-size, 1.25rem);
   letter-spacing: var(--content-letter-spacing, 0);
   margin-top: 4rem;
   word-break: break-word;
@@ -954,7 +954,7 @@ iframe {
 }
 @media (max-width: 767px) {
   .gh-content {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     margin-top: 3.2rem;
   }
 }
@@ -2042,7 +2042,7 @@ blockquote.kg-blockquote-alt {
 /* 手機版的文章內頁標題變小 */
 @media (max-width: 576px) {
   .single-post .post-title {
-    font-size: 3rem;
+    font-size: 2.4rem;
   }
 }
 .single-post .post-meta {
