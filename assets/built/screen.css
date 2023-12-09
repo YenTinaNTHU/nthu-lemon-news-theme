@@ -2538,6 +2538,8 @@ blockquote.kg-blockquote-alt {
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 14px;
+  max-height: 5.6em;
+  line-height: 1.4;
   color: #616161;
   margin: 20px 0px 20px 0px;
 }
