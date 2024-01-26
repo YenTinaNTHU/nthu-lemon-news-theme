@@ -223,12 +223,23 @@ iframe {
   margin: 0 auto;
   max-width: var(--container-width, 1200px);
 }
-.gh-canvas,
-.kg-width-full.kg-content-wide {
+.gh-canvas {
   --main: min(var(--content-width, 500px), 100% - var(--gap) * 2);
   --wide: minmax(
     0,
     calc((var(--container-width, 1200px) - var(--content-width, 500px)) / 2)
+  );
+  --full: minmax(0, 1fr);
+  display: grid;
+  grid-template-columns: [full-start] var(--full) [wide-start] var(--wide) [main-start] var(
+      --main
+    ) [main-end] var(--wide) [wide-end] var(--full) [full-end];
+}
+.kg-width-full.kg-content-wide {
+  --main: min(var(--content-width, 720px), 100% - var(--gap) * 2);
+  --wide: minmax(
+    0,
+    calc((var(--container-width, 1200px) - var(--content-width, 720px)) / 2)
   );
   --full: minmax(0, 1fr);
   display: grid;
@@ -819,8 +830,12 @@ iframe {
 .gh-content {
   font-size: var(--content-font-size, 1.25rem);
   letter-spacing: var(--content-letter-spacing, 0);
-  margin-top: 4rem;
   word-break: break-word;
+
+  margin: 4rem auto 0;
+  max-width: 960px;
+  width: 100%;
+  
 }
 .gh-content > * + * {
   margin-bottom: 0;
@@ -2596,7 +2611,7 @@ blockquote.kg-blockquote-alt {
 .topic-post-card {
   display: grid;
   grid-template-columns: 1fr 2fr; /* 两列，每列的宽度相等 */
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto 40px;
   margin-inline: max(30px, auto);
 }
